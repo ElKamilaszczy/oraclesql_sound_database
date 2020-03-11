@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ProjektSerwisMuzyczny" id="45A8F57F-F67B-02F4-88A0-630656ED8C1F" version="3.5">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 09:31:52 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>45A8F57F-F67B-02F4-88A0-630656ED8C1F</designId>
+</OSDM_Design>

@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8D04676F-E6A2-AEDF-3F67-9F8F9ED1FB32" name="Zgloszenia">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:09:03 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_zgloszenia" id="23DD83F1-A3B6-E5A9-8E0C-9F0D616464D5">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:12:12 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_zglaszajacego" id="435CB9D7-E02E-4575-C5ED-3E00F4AB04D0">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:12:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Klucz obcy do tabeli Użytkownicy (Id_zglaszajacego)]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FB96E014-7240-96B3-24C3-FCF37F7233DB" referredColumn="62A5EDFB-8F4E-D9D9-C193-01F183352ECC"/>
+</associations>
+</Column>
+<Column name="Id_zgloszonego" id="81EFED2F-0DAF-DF3A-82C8-8293D7A9B892">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:12:12 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8ECAF10E-FC72-343A-52CA-DE1F5BFEB761" referredColumn="62A5EDFB-8F4E-D9D9-C193-01F183352ECC"/>
+</associations>
+</Column>
+<Column name="Id_typ_zgloszenia" id="479345DF-7F2C-B3EB-4074-B504FBD5EBCD">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:12:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK do tabeli Typ_zgloszenia]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0EF20E22-02F8-3106-9739-A41C7565EC9E" referredColumn="3F88F91A-6AD1-125A-1E82-EDC000AEB9A4"/>
+</associations>
+</Column>
+<Column name="Data_czas_zgloszenia" id="9DAB6633-0977-619C-882A-0E217184F561">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:12:12 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Opis_zgloszenia" id="92CC0F6A-E6F9-1096-6C82-8AAC851C1C4C">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:12:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Opis użytkownika dla moderacji
+
+]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0FAF3EC5-927A-E3C9-6120-CA6A703DAD91" name="Zgloszenia_PK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:12:12 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23DD83F1-A3B6-E5A9-8E0C-9F0D616464D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6551393F-CE04-2584-1CAE-42CDB9DFDCC7" name="Zgloszenia_Typy_zgloszenia_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:12:01 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="479345DF-7F2C-B3EB-4074-B504FBD5EBCD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="667ACFF3-2E8E-E716-22D1-A72D88D6289E" name="Zgloszenia_Uzytkownicy_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:13:31 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="435CB9D7-E02E-4575-C5ED-3E00F4AB04D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="86983DCB-0CCC-88EC-3855-FA8837CBEA78" name="Zgloszenia_Uzytkownicy_FKv2">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:13:47 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81EFED2F-0DAF-DF3A-82C8-8293D7A9B892"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1D125301-14AB-3D51-A5C4-5EF365197A7A" name="Playlisty_komentarze">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[W ramach każdej playlisty uzytkownik może zamieścić dowolna ilosc komentarzy. Każdy komentarz jest unikalny i przechowywany w oddzielnej tabeli dla każdego innego obiektu (kom. odnośnie utworów, relacji, playlist).]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_playlisty_komentarze" id="AEA7F555-BFC8-61ED-FE8C-990156193B76">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 12:03:50 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_playlisty" id="14FD6A5C-5B7A-50AE-DF47-F5CAB6E1941F">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:08:36 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="82AF2D33-1C08-D54E-295C-974CFF1FA688" referredColumn="6AC929FF-D33C-BDE1-7720-2710BDBF1446"/>
+</associations>
+</Column>
+<Column name="Id_uzytkownika" id="71144CE5-F038-3752-1E07-C67320456C0C">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:08:36 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65B72A04-2864-9457-3DE8-5540F162DBA2" referredColumn="62A5EDFB-8F4E-D9D9-C193-01F183352ECC"/>
+</associations>
+</Column>
+<Column name="Id_komentarza" id="A129578F-FC42-C1AA-E24E-F27C20C1E93D">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:08:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unikalna wartość - tak jak przy komentarzach do relacji.
+]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="74B43224-B0D6-701F-DF17-5E70813EE183" referredColumn="64D574E2-1223-3DD6-E1D3-3C2C0C044B69"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6BCD8ED5-023C-8577-EE94-0E97A0502E12" name="Playlisty_komentarze_PK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:08:36 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14FD6A5C-5B7A-50AE-DF47-F5CAB6E1941F"/>
+<colUsage columnID="71144CE5-F038-3752-1E07-C67320456C0C"/>
+<colUsage columnID="AEA7F555-BFC8-61ED-FE8C-990156193B76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0D7A1AA-0AAB-6A15-D2F8-769E8E49B6C4" name="Playlisty_komentarze__UN">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:08:36 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A129578F-FC42-C1AA-E24E-F27C20C1E93D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="108D05FC-460C-63FC-5D3B-BD35E0D2D06D" name="Playlisty_komentarze_Playlisty_uzytkownika_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:16:49 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14FD6A5C-5B7A-50AE-DF47-F5CAB6E1941F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E670CB73-9068-1AC3-7484-AB1B016FC3A7" name="Playlisty_komentarze_Komentarze_playlist_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:17:11 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A129578F-FC42-C1AA-E24E-F27C20C1E93D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54472882-62F7-A054-1B99-A76D03564DC6" name="Playlisty_komentarze_Uzytkownicy_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:29:23 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71144CE5-F038-3752-1E07-C67320456C0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,220 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C2BA887E-5312-EA66-0D93-915303F14289" name="Uzytkownicy">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 09:34:07 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_użytkownika" id="62A5EDFB-8F4E-D9D9-C193-01F183352ECC">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 09:35:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Klucz główny]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwa_uzytkownika" id="137DE512-0657-14A6-C1D1-73A40B1A0DEB">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 09:47:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atrybut unikalny identyfikujący nazwę użytkownika
+]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email_uzytkownika" id="01A82741-6C75-E765-C43C-01A98BCE8229">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 09:47:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nałożyć constraint sprawdzający poprawnośc adresu email.]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Haslo" id="A15F1D57-529D-ED5C-F4C7-32DD72B7DC0A">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 09:47:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Haslo trzeba bedzie przechowywać w formie hashu.]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_urodzenia" id="F865A282-F08C-ED1E-A444-1E35262D4969">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 09:47:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data urodzenia]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Imie" id="DC7DDEA9-2816-9F8D-CB8C-54739A6E38F8">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 09:47:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pierwsze imie]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Drugie_imie" id="83CC5597-FA7F-6B3F-628C-AC98D17821CF">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 09:47:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Opcjonalnie drugie imię dla osoby posiadającej 2 imiona.]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwisko" id="890A101E-6D1D-1D6C-6D59-93C6BB9AE832">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:02:37 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Wlasny_opis" id="87DDDE46-B587-2541-6C67-8DB48FB88A9B">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 09:47:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Własny opis użytkownika.]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Czy_aktywne_konto" id="BBF3705D-B233-2F2B-2462-443B1FF3EE68">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 09:47:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Gdy konto aktywowane to zmiana na Y. Defaultowa wartość to N.]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<constraintName>Defaultowa wartość N</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ilosc_przewinien" id="D6E8D8C8-3F82-5F69-33CF-089523403785">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 09:47:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ilość przewinien użytkownika. W tej tabeli będą aktualna ilość. Przewinienia będą zmniejszane, jeśli upłynie pewien okres od ostatniego przewinienia.Defaultowa wartość to 0.]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Czy_zablokowany" id="DE658FC8-091F-1715-7EDE-4F2AAB65C598">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:02:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Blokada użytkownika. Informacje odnośnie blokady są przechowywane w tabeli Uzytkownicy_blokady. Jeśli pojawi się tam wpis, to flaga tutaj zostanie zmieniona na Y.]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_czas_utworzenia_konta" id="D4357659-B7CD-77CF-48A2-D046110411AE">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:02:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data i czas utworzenia konta. Automatycznie wpisanie, gdy konto zostanie utworzone. ]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<defaultValue>systimestamp</defaultValue>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_czas_aktywacji_konta" id="4472E1C0-65A0-4D01-CDDF-50C3590097DD">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:02:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Przydatne, by ewentualnie usuwać konta, które nie są aktywowane. NULL oznacza brak aktywacji konta.]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="34A72094-930D-6468-0F91-F0CCAF044ADD" name="Uzytkownicy_PK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 09:35:36 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62A5EDFB-8F4E-D9D9-C193-01F183352ECC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A1B9F7DF-6B8B-8560-DBDB-49180EB752D3" name="Uzytkownicy__UN">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:06:08 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01A82741-6C75-E765-C43C-01A98BCE8229"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="Użytkownicy__email_check" directorySegmentName="seg_0" id="8EBFE151-A4F6-1098-CCDC-10B87FD0F648">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 14:52:28 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<rule><![CDATA[regexp_like(Email_uzytkownika, '^(\w+\.?)+@((\w)+\.(\w)+){1,}$')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

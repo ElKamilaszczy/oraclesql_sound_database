@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F54D7D05-0F99-9FA2-2420-7B8EC7D091A1" name="Playlisty_utwory">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:39:58 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<ordsAlias>table_35</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_playlisty" id="74A31A57-5DD7-B508-985D-7B1A0098E1A4">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:40:49 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B4F099DD-E862-0AD3-19E8-11476A3111B2" referredColumn="6AC929FF-D33C-BDE1-7720-2710BDBF1446"/>
+</associations>
+</Column>
+<Column name="Id_utworu" id="428A7BCA-AE99-5DD9-BA6A-E0596F9C9877">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:42:27 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9823DA20-B327-0FDB-6ADE-DCD0CF64C995" referredColumn="0D5983FB-5D75-DCD4-EA5A-CCA04B29AED2"/>
+</associations>
+</Column>
+<Column name="Data_czas_dodania" id="E2FF63D3-5051-62F7-F3B5-4BBCED35FCC5">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:42:27 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<defaultValue>systimestamp</defaultValue>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_czas_usuniecia" id="0917FA48-E7B4-DA36-5734-BDE37413984F">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:42:27 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C3C25E4C-3AB1-5E8B-AE86-CF4345F737DA" name="Playlisty_utwory_PK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:42:27 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74A31A57-5DD7-B508-985D-7B1A0098E1A4"/>
+<colUsage columnID="428A7BCA-AE99-5DD9-BA6A-E0596F9C9877"/>
+<colUsage columnID="E2FF63D3-5051-62F7-F3B5-4BBCED35FCC5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4BC7766E-165C-D5F4-4B0F-A5FC9BAF94A4" name="Playlisty_utwory_Playlisty_uzytkownika_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:15:50 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74A31A57-5DD7-B508-985D-7B1A0098E1A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3CC41A9-BBEA-EB35-42BE-30EAFF1E6C01" name="Playlisty_utwory_Utwory_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:16:07 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="428A7BCA-AE99-5DD9-BA6A-E0596F9C9877"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

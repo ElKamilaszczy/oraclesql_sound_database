@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9B60B80D-6D54-0750-46CA-B813A39618B9" containerWithKeyObject="6FDB7B1B-9679-0967-1CBE-6AA1C28A282A" localFKIndex="DCE45278-3A45-C42F-2A1D-ED0CCB29179F" name="Playlisty_uzytkownika_Uzytkownicy_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:05:33 UTC</createdTime>
+<comment><![CDATA[Usuniecie uzytkownika z bazy spowoduje kaskadowe usuniecie jego playlist.]]></comment>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<referredTableLongName>Uzytkownicy</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>C2BA887E-5312-EA66-0D93-915303F14289</referredTableID>
+<keyObject>34A72094-930D-6468-0F91-F0CCAF044ADD</keyObject>
+<referredKeyID>34A72094-930D-6468-0F91-F0CCAF044ADD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_użytkownika</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

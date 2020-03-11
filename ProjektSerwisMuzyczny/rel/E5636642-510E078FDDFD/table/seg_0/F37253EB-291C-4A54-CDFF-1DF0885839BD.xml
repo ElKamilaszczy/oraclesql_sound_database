@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F37253EB-291C-4A54-CDFF-1DF0885839BD" name="Utwory_zezwolenia_remix">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:26:11 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<ordsAlias>table_28</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_utwor" id="C421E35D-D337-8E75-5360-6577543EF2E3">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:28:17 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD3A3EE2-77F3-48E2-FDCA-210F90D3DFBA" referredColumn="0D5983FB-5D75-DCD4-EA5A-CCA04B29AED2"/>
+</associations>
+</Column>
+<Column name="Id_uzytkownika" id="E26CF010-00E0-6EDA-AF7F-584D35A60D45">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:28:17 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7AE7762F-D13C-9FDA-DFE2-90A3263D5A51" referredColumn="62A5EDFB-8F4E-D9D9-C193-01F183352ECC"/>
+</associations>
+</Column>
+<Column name="Data_czas_zezwolenia" id="E0760F95-1B7D-CAAF-49F1-EA96D999E432">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:28:17 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Opis_zezwolenia" id="03ED73C1-3C51-8675-07CA-4936902C53CF">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:28:17 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 CHAR</dataTypeSize>
+<ownDataTypeParameters>300 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="56544493-324B-A840-FA4B-CD84F6CFCD07" name="Utwory_zezwolenia_remix_PK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:28:17 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C421E35D-D337-8E75-5360-6577543EF2E3"/>
+<colUsage columnID="E26CF010-00E0-6EDA-AF7F-584D35A60D45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E8AFC45-25B9-49C1-7E86-2FD549E8EF16" name="Utwory_zezwolenia_remix_Utwory_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:28:22 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C421E35D-D337-8E75-5360-6577543EF2E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF435796-9B65-F938-D385-0FAF65D4BDBF" name="Utwory_zezwolenia_remix_Uzytkownicy_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:28:37 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E26CF010-00E0-6EDA-AF7F-584D35A60D45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

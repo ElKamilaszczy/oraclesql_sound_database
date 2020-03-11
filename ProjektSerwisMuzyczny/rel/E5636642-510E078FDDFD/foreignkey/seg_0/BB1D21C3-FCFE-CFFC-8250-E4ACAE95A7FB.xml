@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BB1D21C3-FCFE-CFFC-8250-E4ACAE95A7FB" containerWithKeyObject="606FB5BE-0C3F-1F93-2731-153473015863" localFKIndex="1437D5FE-3650-BDF6-C052-493B95BDAE8A" name="Komentarze_utwory_Utwory_komentarze_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:25:18 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<referredTableLongName>Utwory_komentarze</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>A3D42C58-923F-E988-1E01-04B4E260E517</referredTableID>
+<keyObject>C348E0EB-9075-BE24-4FE8-20550220C62D</keyObject>
+<referredKeyID>C348E0EB-9075-BE24-4FE8-20550220C62D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_komentarza</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

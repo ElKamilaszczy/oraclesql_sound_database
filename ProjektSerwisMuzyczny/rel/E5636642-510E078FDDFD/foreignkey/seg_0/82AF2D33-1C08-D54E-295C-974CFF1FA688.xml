@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="82AF2D33-1C08-D54E-295C-974CFF1FA688" containerWithKeyObject="1D125301-14AB-3D51-A5C4-5EF365197A7A" localFKIndex="108D05FC-460C-63FC-5D3B-BD35E0D2D06D" name="Playlisty_komentarze_Playlisty_uzytkownika_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:16:49 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<referredTableLongName>Playlisty_uzytkownika</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6FDB7B1B-9679-0967-1CBE-6AA1C28A282A</referredTableID>
+<keyObject>B53DAC88-6E1A-253D-2AAF-E226634E505D</keyObject>
+<referredKeyID>B53DAC88-6E1A-253D-2AAF-E226634E505D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_playlisty</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

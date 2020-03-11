@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5BA3EB1F-DD4D-2212-6DF0-6FDF918EFF7B" name="Typy_zgloszenia">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:06:20 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_zgloszenia" id="3F88F91A-6AD1-125A-1E82-EDC000AEB9A4">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:08:50 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Typ_zgloszenia" id="314F55CF-FC0F-D899-9E2D-634DCF877E79">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:08:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unikalna wartośc typu zgloszenia. ]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Opis_zgloszenia" id="ED9812D2-9A73-9507-DC6C-BBEF25F6BCCF">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:08:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Opis zgloszenia opisuje ustalone zgłoszenie- czego się tyczy, różne kary, itp.]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1FAA0493-BA0D-3080-0599-D1AFAE7971AA" name="Typy_zgloszenia_PK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:08:50 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F88F91A-6AD1-125A-1E82-EDC000AEB9A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C253004-3D19-7464-33A0-991EA55ECD31" name="Typ_zgloszenia_unique">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:08:50 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="314F55CF-FC0F-D899-9E2D-634DCF877E79"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

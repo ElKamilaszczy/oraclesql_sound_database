@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Projekt Bazy Danych Serwisu muzycznego" id="E5636642-1750-730E-DAF4-510E078FDDFD" mainViewID="8DABEFED-8025-163C-3485-F78369D62EE8">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 09:32:21 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>79C73AAF-E1A7-E669-7DF0-025EE81A2AFC</selectedRDBMSSite>
+</relationalModel>

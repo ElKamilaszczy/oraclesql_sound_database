@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0F62A0B1-5C9A-3F17-AB89-FF0876C2067A" containerWithKeyObject="1724E211-8EFF-EFEA-535C-871AF9B92DF1" localFKIndex="16026A9D-14EC-7C2A-01DB-64251BFBC807" name="Relacje_komentarze_Relacje_uzytkownika_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:22:24 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<referredTableLongName>Relacje_uzytkownika</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>13D6A331-729C-125E-2601-2651F033AE9E</referredTableID>
+<keyObject>1671B44C-FA32-E4C2-7D2B-5E72CDE4FA7D</keyObject>
+<referredKeyID>1671B44C-FA32-E4C2-7D2B-5E72CDE4FA7D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_relacji</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

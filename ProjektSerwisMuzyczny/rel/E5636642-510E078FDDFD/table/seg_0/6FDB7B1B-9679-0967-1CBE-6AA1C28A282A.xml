@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6FDB7B1B-9679-0967-1CBE-6AA1C28A282A" name="Playlisty_uzytkownika">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:35:36 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_playlisty" id="6AC929FF-D33C-BDE1-7720-2710BDBF1446">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:38:52 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_uzytkownika" id="7D533DC8-F3DD-B7C0-48D6-C4F8EB5A167E">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:38:52 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9B60B80D-6D54-0750-46CA-B813A39618B9" referredColumn="62A5EDFB-8F4E-D9D9-C193-01F183352ECC"/>
+</associations>
+</Column>
+<Column name="Nazwa_playlisty" id="36110D8D-3C0E-D3B6-5B83-F75FB96379BB">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:38:52 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_czas_utworzenia_playlisty" id="83C4D9B9-B1D7-5122-2A1B-979B98A9D26F">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:38:52 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Opis_playlisty" id="FD24B2C3-1BD8-30D8-FFF1-F1FD0512D426">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:38:52 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Czy_publiczna" id="A4E7F71E-6129-FC3B-77C3-391DFDF01306">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:38:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Defaultowo N. Gdy upubliczniona, to inni użytkownicy mogą ją widzieć.]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B53DAC88-6E1A-253D-2AAF-E226634E505D" name="Playlisty_uzytkownika_PK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:38:52 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6AC929FF-D33C-BDE1-7720-2710BDBF1446"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DCE45278-3A45-C42F-2A1D-ED0CCB29179F" name="Playlisty_uzytkownika_Uzytkownicy_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:05:33 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D533DC8-F3DD-B7C0-48D6-C4F8EB5A167E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

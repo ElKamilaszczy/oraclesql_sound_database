@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="04EE6137-99D1-D579-4CEA-F6D225CC9F83" name="Gatunki">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:02:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela słownikowa Gatunek]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_gatunku" id="242BD897-E867-0432-1E2F-795C4F9204FC">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:04:36 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwa_gatunku" id="D9FF1BFB-10B7-50A6-D205-8EAE4A4C5B7A">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:04:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nazwa gatunku unikalna]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Opis_gatunku" id="AA2C9735-FF88-5FAD-C166-2416DDED514C">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:06:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Opis gatunku]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="09B4DE2F-A3E9-AAE7-B7BE-7DEE132AC0F9" name="Gatunki_PK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:04:36 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="242BD897-E867-0432-1E2F-795C4F9204FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB66924C-C68A-49CD-7C96-AE5A40622086" name="Nazwa_gatunku_unique">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 10:06:11 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9FF1BFB-10B7-50A6-D205-8EAE4A4C5B7A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5783283F-64FB-AF79-3B96-B92DC259D2B3" name="Komentarze_playlist">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:08:52 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_komentarza" id="64D574E2-1223-3DD6-E1D3-3C2C0C044B69">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:08:52 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Komentarz" id="81638105-300C-4039-FA03-8BFF4AF3E024">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:08:52 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_czas_komentarza" id="0E9C245B-DBC4-D84E-0A53-096B7492E460">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:08:52 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<defaultValue>systimestamp</defaultValue>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_Komentarze_relacjiv1_Data_czas_komentarza</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7BB647A5-03D1-A0BE-A0EB-0060961291FE" name="Komentarze_playlist_PK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:09:48 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64D574E2-1223-3DD6-E1D3-3C2C0C044B69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

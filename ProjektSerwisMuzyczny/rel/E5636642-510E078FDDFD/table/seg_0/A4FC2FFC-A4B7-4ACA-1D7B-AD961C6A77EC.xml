@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A4FC2FFC-A4B7-4ACA-1D7B-AD961C6A77EC" name="Utwory_gatunki">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Utwór może posiadać wiele gatunków (taki mix gatunków)]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<ordsAlias>table_33</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_utworu" id="84EC188C-CDF0-4D6D-6296-35EDF2A49B7B">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:38:15 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="98A33B05-89A3-D84F-12B1-24211F061A4A" referredColumn="0D5983FB-5D75-DCD4-EA5A-CCA04B29AED2"/>
+</associations>
+</Column>
+<Column name="Id_gatunku" id="62D6E719-C7B9-B52D-81BC-D5D8A8D06B5A">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:38:15 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="13AC8E63-58DF-B1D4-8BA8-C52CDB90F6B1" referredColumn="242BD897-E867-0432-1E2F-795C4F9204FC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3FEEC521-F13C-00BF-CBF9-BD07489191B3" name="Utwory_gatunki_PK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:38:15 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84EC188C-CDF0-4D6D-6296-35EDF2A49B7B"/>
+<colUsage columnID="62D6E719-C7B9-B52D-81BC-D5D8A8D06B5A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C147535-C892-E84A-6807-60FFB6C69287" name="Utwory_gatunki_Gatunki_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 14:58:27 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62D6E719-C7B9-B52D-81BC-D5D8A8D06B5A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F6D447BA-7349-E1D9-E0EA-4C3CD06A3F5E" name="Utwory_gatunki_Utwory_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:28:01 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84EC188C-CDF0-4D6D-6296-35EDF2A49B7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

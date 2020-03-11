@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BD3560D1-8006-1357-FE15-521E1DB72F3D" containerWithKeyObject="E882A93B-396A-695E-8B06-C2E5484F56E2" localFKIndex="CC383507-8DB6-0638-41F9-ADD55DE28FB5" name="Gatunki_obserwowane_Gatunki_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:24:19 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<referredTableLongName>Gatunki</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>04EE6137-99D1-D579-4CEA-F6D225CC9F83</referredTableID>
+<keyObject>09B4DE2F-A3E9-AAE7-B7BE-7DEE132AC0F9</keyObject>
+<referredKeyID>09B4DE2F-A3E9-AAE7-B7BE-7DEE132AC0F9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_gatunku</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

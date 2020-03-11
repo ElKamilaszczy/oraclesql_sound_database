@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="13AC8E63-58DF-B1D4-8BA8-C52CDB90F6B1" containerWithKeyObject="A4FC2FFC-A4B7-4ACA-1D7B-AD961C6A77EC" localFKIndex="3C147535-C892-E84A-6807-60FFB6C69287" name="Utwory_gatunki_Gatunki_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 14:58:27 UTC</createdTime>
+<comment><![CDATA[Raczej nie przewiduje usuwania gatunku, ale jeśli tak będzie, to oczywiście nie można usunąć utworu.]]></comment>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<referredTableLongName>Gatunki</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>04EE6137-99D1-D579-4CEA-F6D225CC9F83</referredTableID>
+<keyObject>09B4DE2F-A3E9-AAE7-B7BE-7DEE132AC0F9</keyObject>
+<referredKeyID>09B4DE2F-A3E9-AAE7-B7BE-7DEE132AC0F9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_gatunku</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

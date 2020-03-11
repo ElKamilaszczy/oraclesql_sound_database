@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A3D42C58-923F-E988-1E01-04B4E260E517" name="Utwory_komentarze">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[W ramach każdego utwru uzytkownik może zamieścić dowolna ilosc komentarzy. ]]></commentInRDBMS>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_utworu_komentarze" id="63F642F4-960E-E3F6-4D83-1DEBE9D2D609">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 12:02:49 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_utworu" id="E32935CE-DDD2-E4FD-CD3C-F9E62992FB49">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:10:38 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B620937E-E733-2544-C750-63DCDE485DE9" referredColumn="0D5983FB-5D75-DCD4-EA5A-CCA04B29AED2"/>
+</associations>
+</Column>
+<Column name="Id_uzytkownika" id="4FCF17F8-9A62-44A6-420A-810BA4FC863D">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:11:59 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E76E2D2-0566-505A-F694-90376F3333BF" referredColumn="62A5EDFB-8F4E-D9D9-C193-01F183352ECC"/>
+</associations>
+</Column>
+<Column name="Id_komentarza" id="D3BD72D7-932F-2C1C-F7E5-47693D1E9274">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:11:59 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="27BCD359-FBD1-1494-9D72-F806F00E4C64" name="Utwory_komentarze_PK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:11:59 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E32935CE-DDD2-E4FD-CD3C-F9E62992FB49"/>
+<colUsage columnID="4FCF17F8-9A62-44A6-420A-810BA4FC863D"/>
+<colUsage columnID="63F642F4-960E-E3F6-4D83-1DEBE9D2D609"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C348E0EB-9075-BE24-4FE8-20550220C62D" name="Utwory_komentarze__UN">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:11:59 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3BD72D7-932F-2C1C-F7E5-47693D1E9274"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="810E2A6D-D353-CD8E-69D5-0BBBCD8863EC" name="Utwory_komentarze_Utwory_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:25:51 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E32935CE-DDD2-E4FD-CD3C-F9E62992FB49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6CB83998-F7FE-5426-53EE-AE0458EF37FE" name="Utwory_komentarze_Uzytkownicy_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:26:15 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4FCF17F8-9A62-44A6-420A-810BA4FC863D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

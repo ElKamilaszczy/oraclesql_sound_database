@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="606FB5BE-0C3F-1F93-2731-153473015863" name="Komentarze_utwory">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:12:20 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_komentarza" id="FEFC1FE4-2C75-5749-09FC-FDB6CF1C5F41">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:12:20 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB1D21C3-FCFE-CFFC-8250-E4ACAE95A7FB" referredColumn="D3BD72D7-932F-2C1C-F7E5-47693D1E9274"/>
+</associations>
+</Column>
+<Column name="Komentarz" id="E5DC3E35-45FE-B53E-5D2D-672CF4EDCF03">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:12:20 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_czas_komentarza" id="2D0771A8-2364-7D3F-4FC4-248B64E7042A">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:12:20 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<defaultValue>systimestamp</defaultValue>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_Komentarze_playlistv1_Data_czas_komentarza</notNullConstraintName>
+</Column>
+<Column name="Data_czas_usuniecia" id="E45F2AC6-5C59-6FED-DA3D-4AB6ECD5AEFD">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:59:34 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DC4BE644-3FCE-F28D-CA16-5A23FD2F8126" name="Komentarze_utwory_PK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 11:12:20 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEFC1FE4-2C75-5749-09FC-FDB6CF1C5F41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1437D5FE-3650-BDF6-C052-493B95BDAE8A" name="Komentarze_utwory_Utwory_komentarze_FK">
+<createdBy>El_Kamilo</createdBy>
+<createdTime>2020-02-26 15:25:18 UTC</createdTime>
+<ownerDesignName>ProjektSerwisMuzyczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEFC1FE4-2C75-5749-09FC-FDB6CF1C5F41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

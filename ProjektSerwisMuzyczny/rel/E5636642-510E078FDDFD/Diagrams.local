@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="8DABEFED-8025-163C-3485-F78369D62EE8" name="Projekt Bazy Danych Serwisu muzycznego" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>
